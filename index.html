@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanvarsha | प्रीमियम मासिक धर्म विलासिता - पुनर्कल्पित जैविक कपास</title>
-    
+
     <!-- Google Fonts: Cormorant Garamond (Serif for luxury headings) & Plus Jakarta Sans (Modern sans-serif for body text) -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- Production-ready Tailwind CSS layer via CDNJS Cloudflare Integration -->
-    <link rel="stylesheet" href="https://cloudflare.com" integrity="sha512-wnea99cKBTitBaa80jbkqhFl3u4WLMvAkWdXoKmTyC3nUZc4E3VNyuqkh6Wm4f9wAmxAPhwKFFnTR5c0vREA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styling Overrides & Luxury Palette Configuration -->
     <style>
@@ -40,12 +40,12 @@
         .text-liquid-gold { color: var(--color-liquid-gold); }
         .bg-liquid-gold { background-color: var(--color-liquid-gold); }
         .border-liquid-gold { border-color: var(--color-liquid-gold); }
-        
+
         /* Premium Micro-animations & Luxury Hover Transitions */
         .premium-transition {
             transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
+
         .gold-button-hover:hover {
             background-color: var(--color-gold-hover);
             transform: translateY(-2px);
@@ -108,7 +108,7 @@
                     <span class="text-[9px] uppercase tracking-[0.25em] text-liquid-gold font-semibold mt-1">संवर्षा हाइजीन</span>
                 </div>
 
-                <!-- Desktop Menu Links Menu -->
+                <!-- Desktop Menu Links -->
                 <div class="hidden md:flex items-center space-x-10 text-xs font-semibold uppercase tracking-widest text-velvet-purple">
                     <a href="#" class="hover:text-liquid-gold premium-transition relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[1px] after:bg-liquid-gold">मुख्य पृष्ठ</a>
                     <a href="#technology" class="hover:text-liquid-gold premium-transition">तकनीक एवं सुरक्षा</a>
@@ -123,7 +123,7 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button Icon Trigger -->
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-velvet-purple focus:outline-none" aria-label="Toggle Menu">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -133,8 +133,8 @@
                 </div>
             </div>
 
-            <!-- Responsive Mobile Dropdown Drawer Matrix -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-gray-100 flex flex-col space-y-4 pb-4 animate-fadeIn">
+            <!-- Responsive Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-gray-100 flex flex-col space-y-4 pb-4">
                 <a href="#" class="text-sm font-medium tracking-wide text-velvet-purple hover:text-liquid-gold px-2">मुख्य पृष्ठ</a>
                 <a href="#technology" class="text-sm font-medium tracking-wide text-velvet-purple hover:text-liquid-gold px-2">तकनीक एवं सुरक्षा</a>
                 <a href="#products" class="text-sm font-medium tracking-wide text-velvet-purple hover:text-liquid-gold px-2">उत्पाद श्रृंखला</a>
@@ -152,8 +152,8 @@
     <section class="relative min-h-screen bg-velvet-purple pt-32 flex items-center overflow-hidden">
         <!-- Abstract Architectural Background Highlights -->
         <div class="absolute inset-0 z-0 opacity-10">
-            <div class="absolute top-1/4 left-1/10 w-96 h-96 rounded-full bg-gradient-to-tr from-yellow-300 to-purple-800 filter blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-1/10 w-[30rem] h-[30rem] rounded-full bg-gradient-to-br from-pink-400 to-indigo-900 filter blur-3xl"></div>
+            <div class="absolute top-1/4 left-[10%] w-96 h-96 rounded-full bg-gradient-to-tr from-yellow-300 to-purple-800 filter blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-[10%] w-[30rem] h-[30rem] rounded-full bg-gradient-to-br from-pink-400 to-indigo-900 filter blur-3xl"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 py-20">
@@ -164,269 +164,325 @@
                         <span class="w-1.5 h-1.5 rounded-full bg-liquid-gold animate-pulse"></span>
                         <span class="text-xs uppercase tracking-[0.2em] text-liquid-gold font-semibold">अल्ट्रा-प्रीमियम हाइजीन रेंज</span>
                     </div>
-                    
+
                     <h1 class="font-serif-luxury text-4xl sm:text-5xl lg:text-7xl text-white font-light leading-[1.15] tracking-tight">
                         Redefining Menstrual Luxury.<br>
                         <span class="italic text-liquid-gold font-normal">Cotton, Reimagined.</span>
                     </h1>
-                    
-Use code with caution.
-भारतीय महिलाओं के स्वास्थ्य और गरिमा को समर्पित एक अद्वितीय नवाचार। संवर्षा लाता है शत-प्रतिशत प्राकृतिक और रसायनरहित सुरक्षा, जो हर पल को बनाए कोमल और चिंतामुक्त।
-संग्रह का अन्वेषण करें
 
-
-हमारी तकनीक देखें
-
-
-100% सर्टिफाइड
-ऑर्गेनिक कॉटन
-त्वचा के अनुकूल, कोई रैश नहीं।
-
-
-
-200+
-गाँवों तक पहुँच
-ग्रामीण अंचलों में स्वास्थ्य क्रांति
-5000+
-शिक्षित महिलाएँ
-मासिक धर्म स्वच्छता जागरूकता
-99.9%
-एंटीबैक्टीरियल सुरक्षा
-वैज्ञानिक परीक्षणों द्वारा प्रमाणित
-1000+
-जागरूकता सत्र
-निरंतर स्वास्थ्य परामर्श शिविर
-
-
-
-वैज्ञानिक उत्कृष्टता और शुद्धता
-सुरक्षा तकनीक जो आपकी त्वचा को समझे
-
-द 6-लेयर लॉक सिस्टम (6-Layer Lock System)
-
-संवर्षा पैड्स का प्रत्येक स्तर उच्च-स्तरीय रिसाव रोधी सुरक्षा और अवशोषण क्षमता प्रदान करने के लिए विशेष रूप से संरचित किया गया है।
-01
-अल्ट्रा-सॉफ्ट नॉन-वूवन ऑर्गेनिक टॉप शीट
-
-
-02
-प्राकृतिक एनियान चिप (एंटी-बैक्टीरियल शील्ड)
-
-
-03
-एयर-लेड स्टेबलाइजिंग एयर परमेबल लेयर
-
-
-04
-सुपर एब्जॉर्बेंट पॉलीमर (SAP) जेल कोर लॉक
-
-
-05
-अतिरिक्त सुरक्षा एयर-लेड अवशोषण परत
-
-
-06
-श्वसन योग्य (Breathable) लीक-प्रूफ बॉटम फिल्म
-
-
-🌱
-100% क्लोरीन मुक्त कॉटन
-
-ब्लीचिंग के लिए किसी भी क्लोरीन या हानिकारक रसायनों का उपयोग नहीं किया जाता है, जिससे त्वचा सुरक्षित रहती है।
-
-🛡️
-थैलेट्स-मुक्त (Phthalates-Free)
-
-कृत्रिम सुगंध और जहरीले थैलेट्स से पूरी तरह मुक्त संरचना जो हार्मोनल असंतुलन के जोखिम को समाप्त करती है।
-
-👩‍⚕️
-स्त्री रोग विशेषज्ञ प्रमाणित
-
-शीर्ष महिला स्वास्थ्य विशेषज्ञों और गाइनोकोलॉजिस्ट्स द्वारा चिकित्सकीय रूप से परीक्षित और स्वीकृत।
-
-🌬️
-अल्ट्रा-ब्रेथेबल मटीरियल
-
-वायु प्रवाह बनाए रखने वाली अत्याधुनिक सूक्ष्म-छिद्र तकनीक, जो नमी, गर्मी और अवांछित गंध को रोके।
-
-
-
-
-उत्कृष्टता का संकलन
-हमारी प्रीमियम रेंज
-विभिन्न शारीरिक आवश्यकताओं और फ्लो पैटर्न के आधार पर निर्मित विशिष्ट संरक्षा उत्पाद श्रेणी।
-
-प्रीमियम श्रेणी
-✨
-
-
-Size XL (Ultra Thin Comfort)
-दैनिक सक्रिय उपयोग
-
-अल्ट्रा-थिन प्रोफाइल जो काम और यात्रा के दौरान बिना किसी परेशानी के चौबीसों घंटे उच्चतम सुरक्षा और आराम सुनिश्चित करे।
-
-
-
-
-
-पूछताछ करें
-
-
-अधिकतम सुरक्षा
-🌙
-
-
-Size XXL (Heavy Flow Protection)
-रात्रि कालीन एवं भारी बहाव
-
-एक्स्ट्रा-लार्ज बैक विंग्स के साथ डिज़ाइन किया गया स्पेशल पैड जो भारी बहाव के दिनों में रात को निर्बाध गहरी नींद प्रदान करता है।
-
-
-
-
-
-पूछताछ करें
-
-
-उन्नत तकनीक
-🧬
-
-
-Anion Chip Shield Pad
-एंटी-माइक्रोबियल कवच
-
-इनबिल्ट एनियान स्ट्रिप जो बैक्टीरिया के विकास को रोकती है और प्राकृतिक रूप से संक्रमण मुक्त वातावरण बनाए रखती है।
-
-
-
-
-
-पूछताछ करें
-
-
-अति कोमल
-☁️
-
-
-Softest Organic Cotton Pad
-संवेदनशील त्वचा के लिए
-
-अति-संवेदनशील त्वचा श्रेणियों के लिए 100% शुद्ध जैविक कपास की सिल्क जैसी चिकनी ऊपरी परत, शून्य असुविधा।
-
-
-
-
-
-पूछताछ करें
-
-
-
-
-
-व्यापार साझेदारी आमंत्रण
-संवर्षा नेटवर्क का हिस्सा बनें
-
-
-
-हम पूरे भारत में अपने विशिष्ट डिस्ट्रीब्यूटरशिप और रीसेलर नेटवर्क का विस्तार कर रहे हैं। यदि आप एक दीर्घकालिक, टिकाऊ और उच्च गुणवत्ता वाले व्यवसाय नेटवर्क से जुड़ना चाहते हैं, तो आज ही अपनी जानकारी सबमिट करें।
-🏢
-
-कॉरपोरेट कार्यालय पता
-पंचायती कॉम्प्लेक्स, झाबुआ रोड, रायपुरिया (म.प्र.) भारत।
-
-
-
-👤
-
-मुख्य संपर्क सूत्र (प्रबंधक)
-नरेन्द्र पाटीदार
-
-
-
-📱
-
-मोबाइल हेल्पलाइन
-+91 9977333087
-
-
-
-प्रथम नाम / First Name *
-अंतिम नाम / Last Name
-मोबाइल नंबर / Mobile Number *
-स्थान एवं संदेश विवरण / Location & Message Details *
-डिस्ट्रीब्यूटरशिप के लिए आवेदन सबमिट करें
-
-
-
-
-
-SANVARSHA
-
-शुद्ध जैविक कपास और अत्याधुनिक एनियान सुरक्षात्मक परतों के संयोजन से निर्मित भारत का सर्वोच्च मासिक धर्म स्वच्छता उत्पाद ब्रांड।
-
-त्वरित लिंक
-
-मुख्य पृष्ठ (Home)
-सुरक्षा तकनीक (Tech)
-उत्पाद सूची (Products)
-व्यवसाय साझेदारी
-
-प्रमाणन एवं सुरक्षा
-
-✓ 100% कॉटन केमिकल फ्री
-✓ डर्मेटोलॉजिकली अप्रूव्ड
-✓ एंटी-बैक्टीरियल शील्ड
-
-कॉरपोरेट संपर्क
-
-प्रबंधक: नरेन्द्र पाटीदार
-
-पंचायती कॉम्प्लेक्स, झाबुआ रोड,
-
-रायपुरिया (म.प्र.) भारत।
-
-
-M: +91 9977333087
-
-
-© 2026 Sanvarsha.com. सर्वाधिकार सुरक्षित।
-
-मुख्य संरक्षक: नरेन्द्र पाटीदार
-|
-नियम एवं शर्तें
-
-
-document.addEventListener('DOMContentLoaded', function() {
-const menuBtn = document.getElementById('mobile-menu-btn');
-const mobileMenu = document.getElementById('mobile-menu');
-const menuIconPath = document.getElementById('menu-icon-path');
-// Responsive Mobile Menu Collapse/Expand Click Logic Handler
-menuBtn.addEventListener('click', function() {
-mobileMenu.classList.toggle('hidden');
-// Polymorphic transformation of menu bar icon shapes into close indicator
-if (mobileMenu.classList.contains('hidden')) {
-menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-} else {
-menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-}
-});
-// Auto-collapse mobile screen viewport menu overlay upon node item target selections
-const mobileLinks = mobileMenu.querySelectorAll('a');
-mobileLinks.forEach(link => {
-link.addEventListener('click', function() {
-mobileMenu.classList.add('hidden');
-menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-});
-});
-// Dynamic window glass backdrop blur manipulation based on global viewport vertical scrolling offset
-window.addEventListener('scroll', function() {
-const nav = document.querySelector('nav');
-if (window.scrollY > 50) {
-nav.classList.add('shadow-md', 'py-3');
-nav.classList.remove('py-5');
-} else {
-nav.classList.remove('shadow-md', 'py-3');
-nav.classList.add('py-5');
-}
-});
-})
+                    <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                        भारतीय महिलाओं के स्वास्थ्य और गरिमा को समर्पित एक अद्वितीय नवाचार। संवर्षा लाता है शत-प्रतिशत प्राकृतिक और रसायनरहित सुरक्षा, जो हर पल को बनाए कोमल और चिंतामुक्त।
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#products" class="w-full sm:w-auto text-center bg-liquid-gold text-velvet-purple font-semibold text-sm uppercase tracking-widest px-8 py-4 gold-button-hover premium-transition">
+                            संग्रह का अन्वेषण करें
+                        </a>
+                        <a href="#technology" class="w-full sm:w-auto text-center border border-white border-opacity-20 text-white font-semibold text-sm uppercase tracking-widest px-8 py-4 hover:border-liquid-gold hover:text-liquid-gold premium-transition">
+                            हमारी तकनीक देखें
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Highlight Card Block -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white bg-opacity-5 border border-white border-opacity-10 rounded-2xl p-8 backdrop-blur-sm">
+                        <div class="text-4xl mb-4">🌿</div>
+                        <h3 class="font-serif-luxury text-2xl text-white mb-2">100% सर्टिफाइड ऑर्गेनिक कॉटन</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">त्वचा के अनुकूल, कोई रैश नहीं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: IMPACT STATISTICS STRIP -->
+    <section class="bg-velvet-purple border-t border-white border-opacity-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                <div>
+                    <p class="font-serif-luxury text-4xl sm:text-5xl text-liquid-gold font-semibold">200+</p>
+                    <p class="text-white text-sm font-semibold mt-2">गाँवों तक पहुँच</p>
+                    <p class="text-gray-400 text-xs mt-1">ग्रामीण अंचलों में स्वास्थ्य क्रांति</p>
+                </div>
+                <div>
+                    <p class="font-serif-luxury text-4xl sm:text-5xl text-liquid-gold font-semibold">5000+</p>
+                    <p class="text-white text-sm font-semibold mt-2">शिक्षित महिलाएँ</p>
+                    <p class="text-gray-400 text-xs mt-1">मासिक धर्म स्वच्छता जागरूकता</p>
+                </div>
+                <div>
+                    <p class="font-serif-luxury text-4xl sm:text-5xl text-liquid-gold font-semibold">99.9%</p>
+                    <p class="text-white text-sm font-semibold mt-2">एंटीबैक्टीरियल सुरक्षा</p>
+                    <p class="text-gray-400 text-xs mt-1">वैज्ञानिक परीक्षणों द्वारा प्रमाणित</p>
+                </div>
+                <div>
+                    <p class="font-serif-luxury text-4xl sm:text-5xl text-liquid-gold font-semibold">1000+</p>
+                    <p class="text-white text-sm font-semibold mt-2">जागरूकता सत्र</p>
+                    <p class="text-gray-400 text-xs mt-1">निरंतर स्वास्थ्य परामर्श शिविर</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: TECHNOLOGY & 6-LAYER LOCK SYSTEM -->
+    <section id="technology" class="bg-cashmere-cream py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-liquid-gold font-semibold">वैज्ञानिक उत्कृष्टता और शुद्धता</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl text-velvet-purple mt-3">सुरक्षा तकनीक जो आपकी त्वचा को समझे</h2>
+            </div>
+
+            <!-- 6-Layer Lock System -->
+            <div class="bg-white border border-gray-100 rounded-2xl p-8 sm:p-12 mb-16">
+                <h3 class="font-serif-luxury text-2xl sm:text-3xl text-velvet-purple mb-2">द 6-लेयर लॉक सिस्टम (6-Layer Lock System)</h3>
+                <p class="text-gray-500 text-sm max-w-2xl mb-10">संवर्षा पैड्स का प्रत्येक स्तर उच्च-स्तरीय रिसाव रोधी सुरक्षा और अवशोषण क्षमता प्रदान करने के लिए विशेष रूप से संरचित किया गया है।</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">01</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">अल्ट्रा-सॉफ्ट नॉन-वूवन ऑर्गेनिक टॉप शीट</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">02</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">प्राकृतिक एनियान चिप (एंटी-बैक्टीरियल शील्ड)</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">03</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">एयर-लेड स्टेबलाइजिंग एयर परमेबल लेयर</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">04</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">सुपर एब्जॉर्बेंट पॉलीमर (SAP) जेल कोर लॉक</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">05</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">अतिरिक्त सुरक्षा एयर-लेड अवशोषण परत</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <span class="font-serif-luxury text-2xl text-liquid-gold">06</span>
+                        <p class="text-sm text-velvet-purple leading-relaxed">श्वसन योग्य (Breathable) लीक-प्रूफ बॉटम फिल्म</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="luxury-card-hover border border-gray-100 rounded-2xl p-6 bg-white">
+                    <div class="text-3xl mb-4">🌱</div>
+                    <h4 class="font-semibold text-velvet-purple mb-2">100% क्लोरीन मुक्त कॉटन</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">ब्लीचिंग के लिए किसी भी क्लोरीन या हानिकारक रसायनों का उपयोग नहीं किया जाता है, जिससे त्वचा सुरक्षित रहती है।</p>
+                </div>
+                <div class="luxury-card-hover border border-gray-100 rounded-2xl p-6 bg-white">
+                    <div class="text-3xl mb-4">🛡️</div>
+                    <h4 class="font-semibold text-velvet-purple mb-2">थैलेट्स-मुक्त (Phthalates-Free)</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">कृत्रिम सुगंध और जहरीले थैलेट्स से पूरी तरह मुक्त संरचना जो हार्मोनल असंतुलन के जोखिम को समाप्त करती है।</p>
+                </div>
+                <div class="luxury-card-hover border border-gray-100 rounded-2xl p-6 bg-white">
+                    <div class="text-3xl mb-4">👩‍⚕️</div>
+                    <h4 class="font-semibold text-velvet-purple mb-2">स्त्री रोग विशेषज्ञ प्रमाणित</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">शीर्ष महिला स्वास्थ्य विशेषज्ञों और गाइनोकोलॉजिस्ट्स द्वारा चिकित्सकीय रूप से परीक्षित और स्वीकृत।</p>
+                </div>
+                <div class="luxury-card-hover border border-gray-100 rounded-2xl p-6 bg-white">
+                    <div class="text-3xl mb-4">🌬️</div>
+                    <h4 class="font-semibold text-velvet-purple mb-2">अल्ट्रा-ब्रेथेबल मटीरियल</h4>
+                    <p class="text-xs text-gray-500 leading-relaxed">वायु प्रवाह बनाए रखने वाली अत्याधुनिक सूक्ष्म-छिद्र तकनीक, जो नमी, गर्मी और अवांछित गंध को रोके।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: PRODUCT RANGE -->
+    <section id="products" class="bg-velvet-purple py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-liquid-gold font-semibold">उत्कृष्टता का संकलन</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl text-white mt-3">हमारी प्रीमियम रेंज</h2>
+                <p class="text-gray-400 text-sm mt-4">विभिन्न शारीरिक आवश्यकताओं और फ्लो पैटर्न के आधार पर निर्मित विशिष्ट संरक्षा उत्पाद श्रेणी।</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="luxury-card-hover bg-white bg-opacity-5 border border-white border-opacity-10 rounded-2xl p-6 flex flex-col">
+                    <span class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">प्रीमियम श्रेणी</span>
+                    <div class="text-3xl mb-4">✨</div>
+                    <h3 class="font-serif-luxury text-xl text-white mb-1">Size XL (Ultra Thin Comfort)</h3>
+                    <p class="text-liquid-gold text-xs font-medium mb-3">दैनिक सक्रिय उपयोग</p>
+                    <p class="text-gray-400 text-xs leading-relaxed flex-grow">अल्ट्रा-थिन प्रोफाइल जो काम और यात्रा के दौरान बिना किसी परेशानी के चौबीसों घंटे उच्चतम सुरक्षा और आराम सुनिश्चित करे।</p>
+                    <a href="#contact" class="mt-6 inline-block text-center border border-liquid-gold text-liquid-gold text-xs uppercase tracking-widest font-semibold py-3 hover:bg-liquid-gold hover:text-velvet-purple premium-transition">पूछताछ करें</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="luxury-card-hover bg-white bg-opacity-5 border border-white border-opacity-10 rounded-2xl p-6 flex flex-col">
+                    <span class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">अधिकतम सुरक्षा</span>
+                    <div class="text-3xl mb-4">🌙</div>
+                    <h3 class="font-serif-luxury text-xl text-white mb-1">Size XXL (Heavy Flow Protection)</h3>
+                    <p class="text-liquid-gold text-xs font-medium mb-3">रात्रि कालीन एवं भारी बहाव</p>
+                    <p class="text-gray-400 text-xs leading-relaxed flex-grow">एक्स्ट्रा-लार्ज बैक विंग्स के साथ डिज़ाइन किया गया स्पेशल पैड जो भारी बहाव के दिनों में रात को निर्बाध गहरी नींद प्रदान करता है।</p>
+                    <a href="#contact" class="mt-6 inline-block text-center border border-liquid-gold text-liquid-gold text-xs uppercase tracking-widest font-semibold py-3 hover:bg-liquid-gold hover:text-velvet-purple premium-transition">पूछताछ करें</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="luxury-card-hover bg-white bg-opacity-5 border border-white border-opacity-10 rounded-2xl p-6 flex flex-col">
+                    <span class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">उन्नत तकनीक</span>
+                    <div class="text-3xl mb-4">🧬</div>
+                    <h3 class="font-serif-luxury text-xl text-white mb-1">Anion Chip Shield Pad</h3>
+                    <p class="text-liquid-gold text-xs font-medium mb-3">एंटी-माइक्रोबियल कवच</p>
+                    <p class="text-gray-400 text-xs leading-relaxed flex-grow">इनबिल्ट एनियान स्ट्रिप जो बैक्टीरिया के विकास को रोकती है और प्राकृतिक रूप से संक्रमण मुक्त वातावरण बनाए रखती है।</p>
+                    <a href="#contact" class="mt-6 inline-block text-center border border-liquid-gold text-liquid-gold text-xs uppercase tracking-widest font-semibold py-3 hover:bg-liquid-gold hover:text-velvet-purple premium-transition">पूछताछ करें</a>
+                </div>
+                <!-- Product 4 -->
+                <div class="luxury-card-hover bg-white bg-opacity-5 border border-white border-opacity-10 rounded-2xl p-6 flex flex-col">
+                    <span class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">अति कोमल</span>
+                    <div class="text-3xl mb-4">☁️</div>
+                    <h3 class="font-serif-luxury text-xl text-white mb-1">Softest Organic Cotton Pad</h3>
+                    <p class="text-liquid-gold text-xs font-medium mb-3">संवेदनशील त्वचा के लिए</p>
+                    <p class="text-gray-400 text-xs leading-relaxed flex-grow">अति-संवेदनशील त्वचा श्रेणियों के लिए 100% शुद्ध जैविक कपास की सिल्क जैसी चिकनी ऊपरी परत, शून्य असुविधा।</p>
+                    <a href="#contact" class="mt-6 inline-block text-center border border-liquid-gold text-liquid-gold text-xs uppercase tracking-widest font-semibold py-3 hover:bg-liquid-gold hover:text-velvet-purple premium-transition">पूछताछ करें</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: BUSINESS PARTNERSHIP / DISTRIBUTOR FORM -->
+    <section id="contact" class="bg-cashmere-cream py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-[0.25em] text-liquid-gold font-semibold">व्यापार साझेदारी आमंत्रण</span>
+                <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl text-velvet-purple mt-3">संवर्षा नेटवर्क का हिस्सा बनें</h2>
+                <p class="text-gray-500 text-sm mt-4">हम पूरे भारत में अपने विशिष्ट डिस्ट्रीब्यूटरशिप और रीसेलर नेटवर्क का विस्तार कर रहे हैं। यदि आप एक दीर्घकालिक, टिकाऊ और उच्च गुणवत्ता वाले व्यवसाय नेटवर्क से जुड़ना चाहते हैं, तो आज ही अपनी जानकारी सबमिट करें।</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
+                <!-- Contact Info Block -->
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 flex items-start space-x-4">
+                        <span class="text-2xl">🏢</span>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-1">कॉरपोरेट कार्यालय पता</p>
+                            <p class="text-sm text-velvet-purple leading-relaxed">पंचायती कॉम्प्लेक्स, झाबुआ रोड, रायपुरिया (म.प्र.) भारत।</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 flex items-start space-x-4">
+                        <span class="text-2xl">👤</span>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-1">मुख्य संपर्क सूत्र (प्रबंधक)</p>
+                            <p class="text-sm text-velvet-purple leading-relaxed">नरेन्द्र पाटीदार</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-100 rounded-2xl p-6 flex items-start space-x-4">
+                        <span class="text-2xl">📱</span>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-1">मोबाइल हेल्पलाइन</p>
+                            <a href="tel:+919977333087" class="text-sm text-velvet-purple hover:text-liquid-gold premium-transition leading-relaxed">+91 9977333087</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Distributor Form -->
+                <div class="lg:col-span-3 bg-white border border-gray-100 rounded-2xl p-8">
+                    <form class="space-y-5" onsubmit="return false;">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-velvet-purple font-semibold mb-2">प्रथम नाम / First Name *</label>
+                                <input type="text" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-liquid-gold premium-transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest text-velvet-purple font-semibold mb-2">अंतिम नाम / Last Name</label>
+                                <input type="text" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-liquid-gold premium-transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-velvet-purple font-semibold mb-2">मोबाइल नंबर / Mobile Number *</label>
+                            <input type="tel" required class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-liquid-gold premium-transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest text-velvet-purple font-semibold mb-2">स्थान एवं संदेश विवरण / Location &amp; Message Details *</label>
+                            <textarea required rows="4" class="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-liquid-gold premium-transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-velvet-purple text-white text-xs uppercase tracking-widest font-semibold py-4 hover:bg-liquid-gold hover:text-velvet-purple premium-transition">
+                            डिस्ट्रीब्यूटरशिप के लिए आवेदन सबमिट करें
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: FOOTER -->
+    <footer class="bg-velvet-purple text-gray-400 pt-20 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white border-opacity-10">
+                <div>
+                    <h4 class="font-serif-luxury text-2xl text-white mb-4">SANVARSHA</h4>
+                    <p class="text-sm leading-relaxed">शुद्ध जैविक कपास और अत्याधुनिक एनियान सुरक्षात्मक परतों के संयोजन से निर्मित भारत का सर्वोच्च मासिक धर्म स्वच्छता उत्पाद ब्रांड।</p>
+                </div>
+                <div>
+                    <h5 class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">त्वरित लिंक</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-liquid-gold premium-transition">मुख्य पृष्ठ (Home)</a></li>
+                        <li><a href="#technology" class="hover:text-liquid-gold premium-transition">सुरक्षा तकनीक (Tech)</a></li>
+                        <li><a href="#products" class="hover:text-liquid-gold premium-transition">उत्पाद सूची (Products)</a></li>
+                        <li><a href="#contact" class="hover:text-liquid-gold premium-transition">व्यवसाय साझेदारी</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">प्रमाणन एवं सुरक्षा</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li>✓ 100% कॉटन केमिकल फ्री</li>
+                        <li>✓ डर्मेटोलॉजिकली अप्रूव्ड</li>
+                        <li>✓ एंटी-बैक्टीरियल शील्ड</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-xs uppercase tracking-widest text-liquid-gold font-semibold mb-4">कॉरपोरेट संपर्क</h5>
+                    <p class="text-sm leading-relaxed">प्रबंधक: नरेन्द्र पाटीदार</p>
+                    <p class="text-sm leading-relaxed mt-2">पंचायती कॉम्प्लेक्स, झाबुआ रोड, रायपुरिया (म.प्र.) भारत।</p>
+                    <p class="text-sm leading-relaxed mt-2">M: <a href="tel:+919977333087" class="hover:text-liquid-gold premium-transition">+91 9977333087</a></p>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs space-y-3 sm:space-y-0">
+                <p>© 2026 Sanvarsha.com. सर्वाधिकार सुरक्षित।</p>
+                <p>मुख्य संरक्षक: नरेन्द्र पाटीदार &nbsp;|&nbsp; <a href="#" class="hover:text-liquid-gold premium-transition">नियम एवं शर्तें</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIconPath = document.getElementById('menu-icon-path');
+
+            // Responsive Mobile Menu Collapse/Expand Click Logic Handler
+            menuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                // Polymorphic transformation of menu bar icon shapes into close indicator
+                if (mobileMenu.classList.contains('hidden')) {
+                    menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                } else {
+                    menuIconPath.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                }
+            });
+
+            // Auto-collapse mobile screen viewport menu overlay upon node item target selections
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    menuIconPath.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                });
+            });
+
+            // Dynamic window glass backdrop blur manipulation based on global viewport vertical scrolling offset
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-md', 'py-3');
+                    nav.classList.remove('py-5');
+                } else {
+                    nav.classList.remove('shadow-md', 'py-3');
+                    nav.classList.add('py-5');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
